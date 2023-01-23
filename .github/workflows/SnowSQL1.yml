@@ -22,4 +22,4 @@ jobs:
     - name: debug  
       run:  -o log_level=DEBUG
     - name: Execute SQL against Snowflake
-      run:  ~/snowflake/snowsql -f code.sql;
+      run:  ~/snowflake/snowsql "select current_date()";
